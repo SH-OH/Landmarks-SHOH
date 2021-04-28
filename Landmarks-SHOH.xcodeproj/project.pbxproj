@@ -23,6 +23,7 @@
 		CB2258762639EB840058BE64 /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2258752639EB840058BE64 /* LandmarkRow.swift */; };
 		CB2258782639ED430058BE64 /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2258772639ED430058BE64 /* LandmarkList.swift */; };
 		CB22587A2639EDFB0058BE64 /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2258792639EDFB0058BE64 /* LandmarkDetail.swift */; };
+		CB22587C2639FC480058BE64 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB22587B2639FC480058BE64 /* FavoriteButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		CB2258752639EB840058BE64 /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
 		CB2258772639ED430058BE64 /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
 		CB2258792639EDFB0058BE64 /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
+		CB22587B2639FC480058BE64 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +177,7 @@
 			children = (
 				CB2258612639DE630058BE64 /* CircleImage.swift */,
 				CB2258352639D2EC0058BE64 /* ContentView.swift */,
+				CB22587B2639FC480058BE64 /* FavoriteButton.swift */,
 				CB2258792639EDFB0058BE64 /* LandmarkDetail.swift */,
 				CB2258772639ED430058BE64 /* LandmarkList.swift */,
 				CB2258752639EB840058BE64 /* LandmarkRow.swift */,
@@ -332,6 +335,7 @@
 				CB22586D2639E5D40058BE64 /* Landmark.swift in Sources */,
 				CB2258762639EB840058BE64 /* LandmarkRow.swift in Sources */,
 				CB22587A2639EDFB0058BE64 /* LandmarkDetail.swift in Sources */,
+				CB22587C2639FC480058BE64 /* FavoriteButton.swift in Sources */,
 				CB2258742639E88F0058BE64 /* ModelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
