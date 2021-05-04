@@ -8,17 +8,20 @@
 import SwiftUI
 
 struct CategoryHome: View {
+    private struct Constants {
+        static let navigationTitle: String = "Featured"
+        static let profileImage: String = "person.crop.circle"
+        static let profileAccessiblityText: String = "User Profile"
+    }
+    
     @EnvironmentObject var modelData: ModelData
     @State private var showingProfile: Bool = false
     
     var body: some View {
         NavigationView {
             List {
-                modelData.features[0].image
-                    .resizable()
-                    .scaledToFill()
-                    .frame(height: 200)
-                    .clipped()
+                PageView(pages: modelData.features.map { FeatureCard(landmark: $0) })
+                    .aspectRatio(3 / 2, contentMode: .fit)
                     .listRowInsets(.init())
                 
                 ForEach(modelData.categories.keys.sorted(), id: \.self) { key in
@@ -29,11 +32,11 @@ struct CategoryHome: View {
                 .listRowInsets(.init())
             }
             .listStyle(InsetListStyle())
-            .navigationTitle("Featured")
+            .navigationTitle(Constants.navigationTitle)
             .toolbar(content: {
                 Button(action: { showingProfile.toggle() }, label: {
-                    Image(systemName: "person.crop.circle")
-                        .accessibilityLabel("User Profile")
+                    Image(systemName: Constants.profileImage)
+                        .accessibilityLabel(Constants.profileAccessiblityText)
                 })
             })
             .sheet(isPresented: $showingProfile, content: {
